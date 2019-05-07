@@ -1,0 +1,10 @@
+#html-element {
+    font-size: 24pt;
+    font-weight: lighter;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+}
+
+.red {
+    color: red
+}

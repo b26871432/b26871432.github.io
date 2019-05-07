@@ -1,0 +1,13 @@
+.jumbotron {
+    color: rgb(42, 122, 255);
+    background-color: #0d4271;
+}
+
+footer {
+    margin-top: 100px;
+    border-top-style: solid;
+    border-top-width: initial;
+    border-top-color: #6f52e2;
+    padding-top: 25px;
+    color: #b47de6;
+}

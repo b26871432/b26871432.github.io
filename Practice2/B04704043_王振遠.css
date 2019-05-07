@@ -1,0 +1,23 @@
+img {
+    width: 300px;
+    height: 500px;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: 10px 10px 18px 0px #585858a3;
+}
+
+body {
+    display: flex;
+    background-color: aqua;
+}
+
+.blue {
+    color: blue;
+    font-size: 30px;
+}
+
+#space {
+    width: 200px
+}
