@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    font-size: 26pt;
+    background-color: aqua;
+}
+
+img {
+    width: 500px;
+}
+
+.practice {
+    font-family: serif;
+    font-size: larger;
+}
