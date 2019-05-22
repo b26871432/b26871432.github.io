@@ -44,6 +44,7 @@
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/contact.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -111,6 +112,31 @@
                                     <li><span><i class="icon-globe3"></i></span>https://www.facebook.com/b26871432</li>
                                 </ul>
                             </div>
+                            <div class="col-md-7 col-md-push-1 animate-box">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="" class="form-control" id="bodyText" cols="30" rows="7" placeholder="Message" aria-required="true" aria-invalid="false" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="Name" class="form-control" id="nameText" placeholder="Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="Email" class="form-control" id="emailText" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="button" value="Send Message" class="btn btn-primary" onclick="submitHandler();">
+                                            <a id="mailTo"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -130,6 +156,7 @@
         </div>
     </div>
 
+    <script src="js/contact.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- jQuery Easing -->
