@@ -86,6 +86,7 @@ h6 {
     color: rgba(0, 0, 0, 0.8);
     font-family: Microsoft JhengHei;
     margin: 0 0 30px 0;
+    font-size: 30px;
 }
 
 ::-webkit-selection {
@@ -621,9 +622,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .progress {
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
     background: none;
     margin: 0 auto;
     -webkit-box-shadow: none;
@@ -696,8 +697,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
     width: 85%;
     height: 85%;
     border-radius: 50%;
-    font-size: 32px;
-    line-height: 125px;
+    font-size: 20px;
+    line-height: 80px;
     text-align: center;
     position: absolute;
     top: 7.5%;
@@ -705,11 +706,13 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .progress.blue .progress-bar {
-    border-color: #049dff;
+    border-color: #59beff;
 }
 
 .progress.blue .progress-value {
-    color: #049dff;
+    color: #59beff;
+    font-style: italic;
+    font-family: -webkit-pictograph;
 }
 
 .progress.blue .progress-left .progress-bar {
@@ -718,11 +721,13 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .progress.yellow .progress-bar {
-    border-color: #fdba04;
+    border-color: #e2c982;
 }
 
 .progress.yellow .progress-value {
-    color: #fdba04;
+    color: #e2c982;
+    font-style: italic;
+    font-family: -webkit-pictograph;
 }
 
 .progress.yellow .progress-left .progress-bar {
@@ -731,11 +736,13 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .progress.pink .progress-bar {
-    border-color: #ed687c;
+    border-color: #e2a2ac;
 }
 
 .progress.pink .progress-value {
-    color: #ed687c;
+    color: #e2a2ac;
+    font-style: italic;
+    font-family: -webkit-pictograph;
 }
 
 .progress.pink .progress-left .progress-bar {
@@ -744,11 +751,14 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .progress.green .progress-bar {
-    border-color: #1abc9c;
+    border-color: #81e8d4;
+    ;
 }
 
 .progress.green .progress-value {
-    color: #1abc9c;
+    color: #81e8d4;
+    font-style: italic;
+    font-family: -webkit-pictograph;
 }
 
 .progress.green .progress-left .progress-bar {
@@ -795,30 +805,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(150deg);
-        transform: rotate(150deg);
-    }
-}
-
-@-webkit-keyframes loading-3 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-    }
-}
-
-@keyframes loading-3 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 
@@ -828,8 +816,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
     }
 }
 
@@ -839,8 +827,30 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+}
+
+@-webkit-keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(75deg);
+        transform: rotate(75deg);
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(75deg);
+        transform: rotate(75deg);
     }
 }
 
@@ -850,8 +860,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(125deg);
-        transform: rotate(125deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
 }
 
@@ -861,8 +871,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(125deg);
-        transform: rotate(125deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
 }
 
@@ -1192,8 +1202,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .article .desc .meta {
     position: absolute;
     top: -80px;
-    left: 20px;
-    background: #FFE9E3;
+    background: #ffe9e37a;
     color: #000;
     padding: 20px 10px;
     font-size: 12px;
@@ -1206,7 +1215,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
     -moz-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
     -ms-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
     -o-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-    box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
 }
 
 .article .desc h2 {
@@ -1799,5 +1808,10 @@ input[type="text"] {
 }
 
 .context {
+    font-family: Microsoft JhengHei;
+}
+
+.context-topic {
+    padding-top: 30px;
     font-family: Microsoft JhengHei;
 }
