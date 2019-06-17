@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>籃球比賽紀錄</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+
+<body>
+    <h1>籃球比賽紀錄</h1>
+    <button id="start" type="button" class="btn btn-primary">開始記錄</button>
+
+    <button id="firstend">第一節結束</button>
+    <button id="secondend">第二節結束</button>
+    <button id="thirdend">第三節結束</button>
+    <button id="end"></button>
+
+    <table id="data">
+        <!--表格標題-->
+        <tr>
+            <th>背號<button id="query" type="button" class="btn btn-primary">確定</button></th>
+            <th>球員<button id="query2" type="button" class="btn btn-primary">確定</button></th>
+            <th class="sta" id="sta1">FG O</th>
+            <th class="sta" id="sta2">FG X</th>
+            <th class="sta" id="sta3">3pt O</th>
+            <th class="sta" id="sta4">3pt X</th>
+            <th class="sta" id="sta5">FT O</th>
+            <th class="sta" id="sta6">FT X</th>
+            <th class="sta" id="sta7">D.Reb</th>
+            <th class="sta" id="sta8">O.Reb</th>
+            <th class="sta" id="sta9">Ast</th>
+            <th class="sta" id="sta10">Blk</th>
+            <th class="sta" id="sta11">Stl</th>
+            <th class="sta" id="sta12">Foul</th>
+            <th class="sta" id="sta13">Tun</th>
+        </tr>
+        <tr>
+            <th id="num1">
+                <input type="text" class="number" id="number1"></th>
+            <th id="nam1"><input type="text " class="name" id="name1"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num2">
+                <input type="text" class="number" id="number2"></th>
+            <th id="nam2"><input type="text " class="name" id="name2"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num3">
+                <input type="text" class="number" id="number3"></th>
+            <th id="nam3"><input type="text " class="name" id="name3"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num4">
+                <input type="text" class="number" id="number4"></th>
+            <th id="nam4"><input type="text " class="name" id="name4"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num5">
+                <input type="text" class="number" id="number5"></th>
+            <th id="nam5"><input type="text " class="name" id="name5"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num6">
+                <input type="text" class="number" id="number6"></th>
+            <th id="nam6"><input type="text " class="name" id="name6"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num7">
+                <input type="text" class="number" id="number7"></th>
+            <th id="nam7"><input type="text " class="name" id="name7"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num8">
+                <input type="text" class="number" id="number8"></th>
+            <th id="nam8"><input type="text " class="name" id="name8"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num9">
+                <input type="text" class="number" id="number9"></th>
+            <th id="nam9"><input type="text " class="name" id="name9"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num10">
+                <input type="text" class="number" id="number10"></th>
+            <th id="nam10"><input type="text " class="name" id="name10"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num11">
+                <input type="text" class="number" id="number11"></th>
+            <th id="nam11"><input type="text " class="name" id="name11"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th id="num12">
+                <input type="text" class="number" id="number12"></th>
+            <th id="nam12"><input type="text " class="name" id="name12"></th>
+            <td class="1"></td>
+            <td class="2"></td>
+            <td class="3"></td>
+            <td class="4"></td>
+            <td class="5"></td>
+            <td class="6"></td>
+            <td class="7"></td>
+            <td class="8"></td>
+            <td class="9"></td>
+            <td class="10"></td>
+            <td class="11"></td>
+            <td class="12"></td>
+            <td class="13"></td>
+        </tr>
+        <tr>
+            <th colspan="2">團隊合計</th>
+            <td id="total1" class="total"></td>
+            <td id="total2" class="total"></td>
+            <td id="total3" class="total"></td>
+            <td id="total4" class="total"></td>
+            <td id="total5" class="total"></td>
+            <td id="total6" class="total"></td>
+            <td id="total7" class="total"></td>
+            <td id="total8" class="total"></td>
+            <td id="total9" class="total"></td>
+            <td id="total10" class="total"></td>
+            <td id="total11" class="total"></td>
+            <td id="total12" class="total"></td>
+            <td id="total13" class="total"></td>
+        </tr>
+    </table>
+
+    <div id="opp">
+        <table id="team" class="team">
+            <tr>
+                <th colspan="2" class="teamdata"></th>
+                <th>第一節</th>
+                <th>第二節</th>
+                <th>第三節</th>
+                <th>第四節</th>
+                <th colspan="2">總數</th>
+            </tr>
+            <tr>
+                <th rowspan="2">比數</th>
+                <th>國企</th>
+                <td id="point1" class="teamdata"></td>
+                <td id="point2" class="teamdata"></td>
+                <td id="point3" class="teamdata"></td>
+                <td id="point4" class="teamdata"></td>
+                <td id="total" class="teamdata"></td>
+            </tr>
+            <tr>
+                <th>其他</th>
+                <td class="opp" id="oppoint1"></td>
+                <td class="opp" id="oppoint2"></td>
+                <td class="opp" id="oppoint3"></td>
+                <td class="opp" id="oppoint4"></td>
+                <td id="optotal"></td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="teamdata">團隊犯規</th>
+                <th>國企</th>
+                <td class="teamdata" id="teamfoul1"></td>
+                <td class="teamdata" id="teamfoul2"></td>
+                <td class="teamdata" id="teamfoul3"></td>
+                <td class="teamdata" id="teamfoul4"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <th>其他</th>
+                <td id="oppfoul1"></td>
+                <td id="oppfoul2"></td>
+                <td id="oppfoul3"></td>
+                <td id="oppfoul4"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="teamdata">團隊FG命中率</th>
+                <td colspan="6" class="teamdata" id="FGp"></td>
+            </tr>
+            <tr>
+                <th colspan="2" class="teamdata">團隊3-pt命中率</th>
+                <td colspan="6" class="teamdata" id="3-ptp"></td>
+            </tr>
+            <tr>
+                <th colspan="2" class="teamdata">團隊FT命中率</th>
+                <td colspan="6" class="teamdata" id="FTp"></td>
+            </tr>
+        </table>
+        <button id="opp1pt" type="button" class="btn btn-primary opponent">對手罰球</button>
+        <button id="opp2pt" type="button" class="btn btn-primary opponent">對手兩分</button>
+        <button id="opp3pt" type="button" class="btn btn-primary opponent">對手三分</button>
+        <button id="oppfoul" type="button" class="btn btn-primary opponent">對手犯規</button>
+    </div>
+    <!-- 引入 Bootstrap 的 JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js "></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+    <!-- 引入我們自己寫的 JavaScript -->
+    <script src="./js/index.js "></script>
+</body>
+
+</html>
