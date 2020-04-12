@@ -1815,3 +1815,7 @@ input[type="text"] {
     padding-top: 30px;
     font-family: Microsoft JhengHei;
 }
+
+.intro {
+    padding: 10px;
+}
