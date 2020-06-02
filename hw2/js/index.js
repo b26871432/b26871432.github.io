@@ -111,7 +111,7 @@ $(document).ready(function() {
 
     }
 
-    var switchPage = function(fromPage, toPage, allPage) {
+    var switchPage = function(toPage, allPage) {
         $ali = $('li.page-item')
         $ali.removeClass()
         if (toPage == 1) {
